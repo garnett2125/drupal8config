@@ -4,7 +4,9 @@ dependencies:
   config:
     - field.field.node.article.body
     - field.field.node.article.field_bool
+    - field.field.node.article.field_email
     - field.field.node.article.field_image
+    - field.field.node.article.field_number
     - node.type.article
   module:
     - image
@@ -38,6 +40,15 @@ content:
       image_link: ''
     third_party_settings: {  }
     type: image
+  field_number:
+    weight: 104
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
   links:
     weight: 100
-hidden: {  }
+hidden:
+  field_email: true

@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.article.field_bool
     - field.field.node.article.field_email
     - field.field.node.article.field_image
+    - field.field.node.article.field_number
     - image.style.thumbnail
     - node.type.article
   module:
@@ -48,6 +49,12 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
+  field_number:
+    weight: 26
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
   promote:
     type: boolean_checkbox
     settings:
