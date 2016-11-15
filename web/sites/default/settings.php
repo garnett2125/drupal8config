@@ -244,8 +244,7 @@
  *   );
  * @endcode
  */
-$config_directories = array();
-
+$config_directories['sync'] = '../config_hc/sync';
 /**
  * Settings:
  *

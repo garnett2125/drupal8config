@@ -1,0 +1,14 @@
+uuid: 38342e22-53db-4639-bf3d-9a4d786bfc72
+name: 'Drupal 8'
+mail: ytillier@actulays.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: AyT9s8OUcclfALRE_imByOMgtZ19eOlqdF6zI3p7yqo
