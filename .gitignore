@@ -20,3 +20,6 @@ web/sites/*/settings.local.php
 
 # Ignore drupal console files
 console/*
+
+# Ignore .DS_Store
+*.DS_Store
