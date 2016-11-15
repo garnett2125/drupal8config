@@ -285,7 +285,7 @@ $config_directories = array();
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = '';
+$settings['hash_salt'] = 'mQofBoVF5gjaiD-Nodm039nU18kHsqygGq-mwFyEbC26XDeiUK0TzJPi5R0hsJrtXbYKt8y6bQ';
 
 /**
  * Deployment identifier.
@@ -738,17 +738,15 @@ $settings['file_scan_ignore_directories'] = [
   'node_modules',
   'bower_components',
 ];
+$config_directories['sync'] = 'sites/default/files/config/sync';
 
-/**
- * Load local development override configuration, if available.
- *
- * Use settings.local.php to override variables on secondary (staging,
- * development, etc) installations of this site. Typically used to disable
- * caching, JavaScript/CSS compression, re-routing of outgoing emails, and
- * other things that should not happen on development and testing sites.
- *
- * Keep this code block at the end of this file to take full effect.
- */
-if (file_exists(__DIR__ . '/settings.local.php')) {
-  include __DIR__ . '/settings.local.php';
-}
+$databases['default']['default'] = array (
+  'database' => 'D8PREPROD',
+  'username' => 'root',
+  'password' => '92485cb108ffa4aa310a6669f8bea0ed0125bfbc5a70db93',
+  'prefix' => '',
+  'host' => 'localhost',
+  'port' => '3306',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+);
