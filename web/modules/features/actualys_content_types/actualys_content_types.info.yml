@@ -1,0 +1,9 @@
+name: 'Actualys content types'
+type: module
+core: 8.x
+dependencies:
+  - field
+  - image
+  - node
+  - text
+  - user
