@@ -3,7 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.node.article.body
-    - field.field.node.article.field_email
+    - field.field.node.article.field_bool
     - field.field.node.article.field_image
     - image.style.thumbnail
     - node.type.article
@@ -28,6 +28,12 @@ content:
     weight: 10
     settings: {  }
     third_party_settings: {  }
+  field_bool:
+    weight: 28
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
   field_image:
     weight: 27
     settings:
@@ -62,5 +68,4 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-hidden:
-  field_email: true
+hidden: {  }
