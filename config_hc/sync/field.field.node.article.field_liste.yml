@@ -1,0 +1,21 @@
+uuid: d90397da-be44-4b50-8705-05eb02c56c97
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_liste
+    - node.type.article
+  module:
+    - options
+id: node.article.field_liste
+field_name: field_liste
+entity_type: node
+bundle: article
+label: liste
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer
