@@ -737,7 +737,6 @@ $settings['file_scan_ignore_directories'] = [
   'node_modules',
   'bower_components',
 ];
-$config_directories['sync'] = 'sites/default/files/config/sync';
 
 $databases['default']['default'] = array (
   'database' => 'D8PREPROD',
