@@ -6,13 +6,16 @@ dependencies:
     - core.entity_view_display.comment.comment.default
     - field.field.node.article.body
     - field.field.node.article.comment
+    - field.field.node.article.field_date
     - field.field.node.article.field_image
     - field.field.node.article.field_liste
     - field.field.node.article.field_tags
+    - field.field.node.article.field_time
     - image.style.large
     - node.type.article
   module:
     - comment
+    - datetime
     - image
     - options
     - text
@@ -38,6 +41,14 @@ content:
       view_mode: default
       pager_id: 0
     third_party_settings: {  }
+  field_date:
+    weight: 112
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
   field_image:
     type: image
     weight: -1
@@ -59,6 +70,15 @@ content:
     settings:
       link: true
     third_party_settings: {  }
+  field_time:
+    weight: 113
+    label: above
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+    type: timestamp
   links:
     weight: 100
 hidden:

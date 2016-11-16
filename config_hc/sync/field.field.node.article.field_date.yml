@@ -1,21 +1,21 @@
-uuid: d90397da-be44-4b50-8705-05eb02c56c97
+uuid: 8e636051-b531-4c9b-9396-3bef0202baae
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_liste
+    - field.storage.node.field_date
     - node.type.article
   module:
-    - options
-id: node.article.field_liste
-field_name: field_liste
+    - datetime
+id: node.article.field_date
+field_name: field_date
 entity_type: node
 bundle: article
-label: 'liste yoyo'
+label: Date
 description: ''
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: list_integer
+field_type: datetime
